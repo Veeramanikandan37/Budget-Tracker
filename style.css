@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#transaction {
+    border: 2px solid;
+    margin: 20px;
+    padding: 20px;
+    width: 640px;
+}
+
+#transaction #name_amount {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#transaction .lab_inp {
+    display: block;
+}
+
+#transaction header,
+#btn {
+    text-align: center;
+}
+
+#transaction label {
+    margin: 10px 0;
+}
+
+#book {
+    margin: 20px;
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 480px;
+}
+table{
+    border-collapse: collapse;
+}
+#book td,
+#book tr,
+#book th {
+    border-collapse: collapse;
+    width: 100px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+}

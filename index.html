@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="transaction">
+        <header>
+            <h1>Add a new transaction</h1>
+        </header>
+        <form id="transaction-form">
+            <div class="form-group">
+                <label for="options">Type: </label>
+                <select name="optns" id="options">
+                    <option value="choose one">Choose one...</option>
+                    <option value="Income">Income</option>
+                    <option value="Expense">Expense</option>
+                </select>
+            </div>
+            <div id="name_amount">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount: </label>
+                    <input type="text" id="amount" name="amount">
+                </div>
+            </div>
+            <button type="submit" id="btn">Add to transactions</button>
+        </form>
+    </section>
+    <section id="book">
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
